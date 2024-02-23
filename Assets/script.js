@@ -9,4 +9,9 @@ document.getElementById('generate').addEventListener("click", function() {
     const hasUpperCase = confirm('Include uppercase letters?');
     const hasNumbers = confirm('Include numbers?');
     const hasSpecialChars = confirm('Include special characters?');
+
+    if (!hasLowerCase && !hasUpperCase && !hasNumbers && !hasSpecialChars) {
+        alert('At least one character type should be selected.');
+        return;
+    }
     
