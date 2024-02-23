@@ -4,4 +4,9 @@ document.getElementById('generate').addEventListener("click", function() {
         alert('Password length must be between 8 and 128 Characters.');
         return;
     }
+
+    const hasLowerCase = confirm('Include lowercase letters?');
+    const hasUpperCase = confirm('Include uppercase letters?');
+    const hasNumbers = confirm('Include numbers?');
+    const hasSpecialChars = confirm('Include special characters?');
     
