@@ -14,4 +14,8 @@ document.getElementById('generate').addEventListener("click", function() {
         alert('At least one character type should be selected.');
         return;
     }
+
+    const password = generatePassword(length, hasLowerCase, hasUpperCase, hasNumbers, hasSpecialChars);
+    document.getElementById( "password" ).value = password;
+});
     
