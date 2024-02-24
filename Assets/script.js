@@ -34,7 +34,8 @@ document.getElementById('generate').addEventListener('click', function () {
   
     for (let i = 0; i < length; i++) {
       let character;
-      if (hasLowerCase) {
+      
+      if (hasLowerCase){
         character = getRandomChar(lowerCaseChars);
       } else if (hasUpperCase) {
         character = getRandomChar(upperCaseChars);
