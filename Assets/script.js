@@ -17,5 +17,11 @@ document.getElementById('generate').addEventListener("click", function() {
 
     const password = generatePassword(length, hasLowerCase, hasUpperCase, hasNumbers, hasSpecialChars);
     document.getElementById( "password" ).value = password;
-});
-    
+}); 
+
+function generatePassword(length,hasLowerCase,hasUpperCase,hasNumbers,hasSpecialChars) {
+    const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+    const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const numberChars = '0123456789';
+    const specialCharsList = '!@#$%^&*()_-+' ;
+}    
