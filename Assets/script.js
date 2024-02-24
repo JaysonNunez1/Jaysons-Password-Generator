@@ -24,4 +24,11 @@ function generatePassword(length,hasLowerCase,hasUpperCase,hasNumbers,hasSpecial
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const numberChars = '0123456789';
     const specialCharsList = '!@#$%^&*()_-+' ;
-}    
+    
+    let password = ' ';
+
+const getRandomChar = (chars) => {
+    const randomIndex = Math.floor(Math.random() * chars.length);
+    return chars[randomIndex];
+}};
+  
